@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Not Found</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Error Page</title>
+  <style>
+    /* External CSS */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+    }
+    .error-container {
+      position: relative;
+      height: 100%;
+      background-image: url('your-image-here.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .error-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
+    .error-content {
+      position: relative;
+      color: white;
+      z-index: 2;
+    }
+    .error-code {
+      font-size: 300px;
+      line-height: 1;
+      margin: 0;
+    }
+    .error-message {
+      font-size: 35px;
+      font-weight: 700;
+      margin: 20px 0;
+    }
+    .go-back {
+      font-size: 15px;
+      font-weight: 700;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 50px;
+      background-color: white;
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-    
+  <div class="error-container">
+    <div class="error-overlay"></div>
+    <div class="error-content">
+      <h1 class="error-code">404</h1>
+      <p class="error-message">Sorry got lost looking at this view.</p>
+      <a href="/" class="go-back">Go Back</a>
+    </div>
+  </div>
 </body>
 </html>
