@@ -1,0 +1,187 @@
+/* @External CSS style.css*/
+
+/* @These lines below are going to style the body of the page that will
+display on the screen.*/
+body{
+  /*Below will set a background image to the desired photo*/
+    background-image: url(./travelvanpic.jpg);
+
+    /*Below will set the size of the background image, allowing
+    it to cover the screen.*/
+    background-size: cover;
+
+    /*Below will center the background image.*/
+    background-position: center;
+
+    /*Below makes sure that the image doesn't keep repeating itself,
+    but that it covers the screen as one single image.*/
+    background-repeat: no-repeat;
+}
+
+
+
+/*@These lines below are going to style the body and the html.*/
+body, html {
+    margin: 0; /*This line will make sure there are no margins.*/
+
+    padding: 0; /*This line will make sure there is no internal padding.*/
+
+    height: 100%; /* This property sets the height of the element to 100% of the height 
+    of its containing element. In other words, 
+    the element will fill the entire height of its parent container.*/
+
+    font-family: 'Inter', sans-serif; /*This is the type of font being used.*/
+  }
+
+
+  /*These lines below are going to target and style the div in the html file with
+  the class name "error-container." */
+  .error-container {
+    position: relative; /*@This property defines the positioning method used for the element. 
+    When set to relative, the element is positioned relative to its normal 
+    position in the document flow. Other elements will still occupy the 
+    space they would normally take up, even if the positioned element is moved.*/
+
+    height: 100%; /* This property sets the height of the element to 100% of the height 
+    of its containing element. In other words, 
+    the element will fill the entire height of its parent container.*/
+
+    display: flex; /* This property enables Flexbox layout on the element's children. 
+    Flexbox is a one-dimensional layout method for laying out items in rows or columns. 
+    With this property, the element's direct children become flex items, 
+    and the element itself becomes a flex container.*/
+
+    justify-content: center; /* This property aligns flex items along the main axis 
+    of the flex container. In this case, it centers the flex items horizontally 
+    within the container.*/
+
+    align-items: center; /* This property aligns flex items along the cross 
+    axis of the flex container. In this case, it centers the flex items 
+    vertically within the container.*/
+
+    text-align: center; /* This property sets the horizontal alignment 
+    of text within the element. When set to center, it horizontally 
+    centers the text within the element.*/
+  }
+
+
+
+  .error-overlay {
+    position: absolute; 
+
+    /*These properties set the positioning of the element's edges. 
+    Together, they stretch the element to cover the entire area of 
+    its positioned ancestor or the initial containing block.*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    /*This property sets the background color of the element. 
+    In this case, it's using an RGBA color value, 
+    where the first three values (0, 0, 0) represent the RGB color 
+    (black in this case), 
+    and the fourth value (0.2) represents the alpha channel, 
+    indicating the opacity (20% opaque in this case). 
+    This creates a semi-transparent black overlay effect, 
+    allowing some of the content beneath it to be visible.*/
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+
+
+  .error-content {
+    position: relative; 
+
+    color: white; /* This property sets the text color of the element to white. 
+    This applies to all text content within the element and its descendants.*/
+
+
+    z-index: 2; /* This property sets the stack order of the element. 
+    Elements with a higher z-index value will appear in front of elements 
+    with lower z-index values. If multiple elements overlap, 
+    the one with the higher z-index will be displayed on top. In this case, 
+    setting z-index: 2; places the element above elements with default or lower 
+    z-index values.*/
+  }
+
+
+  .error-message {
+    font-size: 45px; /*  This property sets the size of the font used for the text 
+    content of the element. In this case, the font size is set to 45 pixels. 
+    This means the text within the element will be rendered larger than normal.*/
+
+    font-weight: 700; /* This property sets the weight (or thickness) of the font 
+    used for the text content of the element. In CSS, 
+    font weights are typically specified using numeric values ranging from 100 
+    (thin) to 900 (bold). A value of 700 represents a bold font weight.*/
+
+    margin: 20px 0; /* This property sets the margin of the element, 
+    specifying the space between the element and surrounding elements. 
+    The values represent the top and bottom margins, and the left and 
+    right margins are set to 0. So, the element has a margin of 20 pixels 
+    at the top and bottom, and no margin on the left and right sides.*/
+  }
+
+
+  .go-back {
+    background-image: url(./gobackbutton.svg); /* This property sets the background 
+    image of the element. In this case, it's loading an image file 
+    named "gobackbutton.svg" from the current directory.*/
+
+    background-size:contain; /* This property specifies how the background image 
+    should be resized to fit the container. Setting it to "contain" ensures that 
+    the entire background image is visible within the container without cropping or 
+    distortion.*/
+
+    background-position: center; /* This property sets the initial position of the 
+    background image within the container. By setting it to "center", the background 
+    image is centered horizontally and vertically within the container.*/
+
+    background-repeat: no-repeat; /*  This property controls whether the background 
+    image should be repeated to fill the container. Setting it to "no-repeat" ensures 
+    that the background image is displayed only once, without repetition.*/
+
+    cursor: pointer; /* This property sets the type of cursor to be displayed 
+    when hovering over the element. In this case, it changes the cursor to a pointer, 
+    indicating to the user that the element is clickable or interactive.*/
+
+    width: 100%; /* This property sets the width of the element to 100% of its containing 
+    parent's width, causing the element to span the entire width of its container.*/
+
+    padding: 100px 0px 100px 0px; /* This property sets the padding of the element, 
+    specifying the space between the element's content area and its border. 
+    This is being used so that the background image of the div will show. The values 
+    represent the top, right, bottom, and left padding, respectively. So, in this case, 
+    the element has 100 pixels of padding at the top and bottom and 0 pixels of padding 
+    on the right and left sides.*/
+  }
+
+
+  .go-back:hover {
+    background-image: url(./gobackbuttononhover.svg); 
+    background-size:contain; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    cursor: pointer; 
+    width: 100%;
+    padding: 100px 0px 100px 0px;
+  }
+
+  /*Mobile small view*/
+  /* When the viewport width is 575.98 pixels or less, 
+  text within elements having the class .error-message will have 
+  a font size of 35 pixels and a font weight of 400. */
+@media (max-width: 575.98px) {
+
+  /*The CSS rules are applied to elements with the class .error-message.*/
+  .error-message{
+
+    font-size: 35px; /*  This property sets the font size of the text content 
+    within elements with the class .error-message to 35 pixels when the viewport 
+    width is within the specified range.*/
+
+    font-weight: 400;/* This property sets the font weight of the text content 
+    within elements with the class .error-message to 400.*/
+  }
+}
