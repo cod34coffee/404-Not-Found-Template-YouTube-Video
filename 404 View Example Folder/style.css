@@ -1,0 +1,240 @@
+/* External CSS */
+
+/*Styles applied to the <body> element.*/
+body{
+
+  /*Sets the background image of the body using the specified URL.*/
+    background-image: url(./travelwiththeviewphoto.jpg);
+
+    /* Sets the size of the background image to cover the entire viewport.*/
+    background-size: cover;
+
+    /*Centers the background image within the viewport.*/
+    background-position: center;
+
+    /*Ensures that the background image is not repeated.*/
+    background-repeat: no-repeat;
+}
+
+
+/*Styles applied to both the <body> and <html> elements.*/
+body, html {
+
+    /*Sets the margin of both the body and HTML elements to 0, removing any default margin.*/
+    margin: 0;
+
+    /*Sets the padding of both the body and HTML elements to 0, removing any default padding.*/
+    padding: 0;
+
+    /*Sets the height of both the body and HTML elements to 100% of the viewport height.*/
+    height: 100%;
+
+    /* Specifies the font family for text content within both the body and HTML elements.*/
+    font-family: 'Inter', sans-serif;
+  }
+
+  /*Styles applied to elements with the class error-container.*/
+  .error-container {
+
+    /*Sets the position of the container to relative.*/
+    position: relative;
+
+    /*Sets the height of the container to 100% of the viewport height.*/
+    height: 100%;
+
+    /* Specifies that the container should be displayed as a flex container.*/
+    display: flex;
+
+    /*Centers the content horizontally within the container.*/
+    justify-content: center;
+
+    /*Centers the content vertically within the container.*/
+    align-items: center;
+
+    /*Centers the text content horizontally within the container.*/
+    text-align: center;
+  }
+
+
+  /*Styles applied to elements with the class error-overlay.*/
+  .error-overlay {
+
+    /*Sets the position of the overlay to absolute.*/
+    position: absolute;
+
+    /*These properties set the positioning of the element's edges. 
+    Together, they stretch the element to cover the entire area of 
+    its positioned ancestor or the initial containing block.*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    /*This property sets the background color of the element. 
+    In this case, it's using an RGBA color value, 
+    where the first three values (0, 0, 0) represent the RGB color (black in this case), 
+    and the fourth value (0.2) represents the alpha channel, 
+    indicating the opacity (20% opaque in this case). 
+    This creates a semi-transparent black overlay effect, 
+    allowing some of the content beneath it to be visible.*/
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+
+  /*Styles applied to elements with the class error-content.*/
+  .error-content {
+
+    /*Sets the position of the content to relative.*/
+    position: relative;
+
+    /*Sets the text color of the content to white.*/
+    color: white;
+
+    /*Specifies the stack order of the content, ensuring it appears above the overlay.*/
+    z-index: 2;
+  }
+
+  /*Styles applied to elements with the class error-code.*/
+  .error-code {
+
+    /*Sets the font size of the error code to 300 pixels.*/
+    font-size: 300px;
+
+    /*Sets the line height of the error code to 1, ensuring it takes up the full height available.*/
+    line-height: 1;
+
+    /*Sets the margin of the error code to 0.*/
+    margin: 0;
+  }
+
+  /*Styles applied to elements with the class error-message.*/
+  .error-message {
+
+    /*Sets the font size of the error message to 35 pixels.*/
+    font-size: 35px;
+
+    /*Sets the font weight of the error message to bold (700).*/
+    font-weight: 700;
+
+    /*Sets the top and bottom margins of the error message to 20 pixels, 
+    with 0 margin on the left and right.*/
+    margin: 20px 0;
+  }
+  
+  /*This targets the go back button in the html file.*/
+  .go-back {
+    /* Sets the size of the font used for the text content inside the button or link to 15 pixels.*/
+    font-size: 15px;
+
+    /* Sets the weight (or thickness) of the font used for the text content to bold.*/
+    font-weight: 700;
+
+    /*Specifies the padding of the button or link, determining the space between the content (text) and the border. 
+    The top and bottom padding is set to 10 pixels, while the left and right padding is set to 20 pixels.*/
+    padding: 10px 20px;
+
+    /*Removes the border around the button or link.*/
+    border: none;
+
+    /*Sets the border radius of the button or link to create rounded corners. A value of 50px creates a circular appearance.*/
+    border-radius: 50px;
+
+    /*Sets the background color of the button or link to white.*/
+    background-color: white;
+
+    /*Removes any underlining or other decorations from the text content inside the button or link. This is commonly used 
+    for links to remove the default underline.*/
+    text-decoration: none;
+
+    /*Sets the color of the text content inside the button or link to black.*/
+    color: black;
+
+    /*Changes the mouse cursor to a pointer when hovering over the button or link, indicating to the user that it's clickable.*/
+    cursor: pointer;
+
+    /*Changes the default display behavior of the button or link to inline-block. 
+    This allows the button or link to have padding and margins applied while still flowing within text content.*/
+    display: inline-block;
+
+    /*Sets the margin above the button or link, creating space between it and other elements. 
+    In this case, there is a 10-pixel margin at the top of the button or link.*/
+    margin-top: 10px;
+  }
+
+  /*This is what the button will do when you hover over it. That's why you add
+  the ":hover"*/
+  .go-back:hover {
+
+    /*This property sets the size of the font used for the text content 
+    inside the button. In this case, the font size is set to 15 pixels.*/
+    font-size: 15px;
+
+    /* This property sets the weight (or thickness) of the font used for 
+    the text content inside the button. A value of 700 represents a bold font weight.*/
+    font-weight: 700;
+
+    /* This property sets the padding of the button, specifying the space between the content 
+    (text) and the border. The values represent the top/bottom and left/right padding, respectively.*/
+    padding: 10px 20px;
+
+    /* This property removes the border around the button. By setting it to "none", the button has no visible border.*/
+    border: none;
+
+    /*This property sets the border radius of the button, giving it rounded corners. A value of 50px indicates a 
+    large border radius, creating a circular appearance.*/
+    border-radius: 50px;
+
+    /*This property sets the background color of the button to black.*/
+    background-color: black;
+
+    /*This property removes any underlining or other decorations from text content. It's commonly used with links to remove the default underline.*/
+    text-decoration: none;
+
+    /*This property sets the color of the text content inside the button to white.*/
+    color: white;
+
+    /*This property changes the mouse cursor to a pointer when hovering over the button, indicating to the user that it's clickable.*/
+    cursor: pointer;
+
+    /*This property changes the default display behavior of the button to inline-block. 
+    This allows the button to have padding and margins applied while still flowing within text content.*/
+    display: inline-block;
+
+    /*This property sets the margin above the button, creating space between it and other elements. 
+    In this case, there is a 10-pixel margin at the top of the button.*/
+    margin-top: 10px;
+  }
+
+
+/*Mobile small view*/
+  @media (max-width: 575.98px) {
+
+    /*The CSS rules are applied to elements with the class .error-message.*/
+    .error-message{
+  
+      font-size: 25px; /*  This property sets the font size of the text content within elements 
+      with the class .error-message to 35 pixels when the viewport width is within the specified 
+      range.*/
+  
+      font-weight: 400;/* This property sets the font weight of the text content within elements 
+      with the class .error-message to 400. Font weight 400 is typically the normal or regular weight 
+      for most fonts.*/
+    }
+
+    .error-code {
+
+      /*This property sets the size of the font used for the text content. In this case, the font 
+      size is set to 200 pixels, making the text quite large.*/
+      font-size: 200px; 
+
+      /*This property sets the height of each line of text within the element. A value of 1 
+      means that the line height will be equal to the font size. This ensures that there is 
+      no extra spacing between lines of text.*/
+      line-height: 1;
+
+      /* This property sets the margin of the element. Margin is the space outside the border of an element. 
+      Setting it to 0 removes any margin, ensuring that there is no spacing between the element and its parent 
+      or neighboring elements.*/
+      margin: 0;
+    }
+  }
