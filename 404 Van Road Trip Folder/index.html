@@ -1,67 +1,70 @@
-<!--This is the HTML file for the "404 Not Found Page" with the van image.-->
+<!--This is the HTML file that will hold the code.
+I will periodically add explanations for certain parts of the code.
+Let's start.-->
 
 
-<!--This declaration defines the document type and 
-version of HTML being used, in this case, HTML5.-->
-<!DOCTYPE html> 
 
-<!--This opening tag indicates the beginning of the 
-HTML document and specifies the language of the document (English).-->
+<!DOCTYPE html>
 <html lang="en">
-
-<!--This section contains meta-information about the HTML document, 
-such as character encoding, viewport settings, external stylesheets, 
-and the document title.-->
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--This meta tag specifies the character encoding of the document 
-  as UTF-8, which supports a wide range of characters from various languages.-->
-  <meta charset="UTF-8">
+    <!--Later on the style.css file will be made and it will go under here.-->
+    <!--@This link tag is used to link an external CSS file named "style.css" 
+    to the HTML document. External CSS files are commonly used to separate the 
+    style definitions from the HTML content for 
+    better organization and maintainability.-->
+    <!--Let's go ahead and make the style sheet.
+    Now it is time to link that style sheet to this HTML file.-->
+    <link rel="stylesheet" href="./style.css">
 
-  <!--This meta tag sets the viewport properties for responsive web design. 
-  It ensures that the width of the viewport is set to the device width, and 
-  the initial zoom level is set to 1.0, which means the webpage will be 
-  displayed at 100% zoom initially.-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--@This link tag is used to link an external CSS file named "style.css" 
-  to the HTML document. External CSS files are commonly used to separate the 
-  style definitions from the HTML content for 
-  better organization and maintainability.-->
-  <link rel="stylesheet" href="./style.css">
 
-  <!--@This tag sets the title of the HTML document, which appears in the 
-  browser's title bar or tab.-->
-  <title>404 Error Page: Where Are We?</title>
-
+    <!--@This tag sets the title of the HTML document, which appears in the 
+     browser's title bar or tab.-->
+     <!--Let's check to see if the tab name has changed to 
+    404 Error Page: Where Are We?-->
+    <!--Yep, that worked. Okay, moving on.-->
+    <title>404 Error Page: Where Are We?</title>
 </head>
+
 
 <!--@This is the body of the HTML document, where the visible content 
 of the webpage is placed.-->
-<body> 
+<!--Let's start styling the body.-->
+<body>
 
-  <!--@This is a container for the error content. It encapsulates all the 
-  elements related to 
-  displaying the error message.-->
-  <div class="error-container">
+     <!--@This is a container for the error content. It encapsulates all the 
+    elements related to displaying the error message.-->
+    <div class="error-container">
 
-   <!--@An overlay element, Used to darken the photo for visual effects & 
-  styling purposes.-->
-    <div class="error-overlay"></div>
 
-    <!--@This div contains the actual content of the error message.-->
-    <div class="error-content">
+        <!--@An overlay element, Used to darken the photo for visual effects & 
+        styling purposes.-->
+        <div class="error-overlay"></div>
 
-      <!--@This paragraph contains the error message itself, indicating that 
-      the user has reached a page that does not exist (a 404 error message). 
-      The message is split into multiple lines using the <br> tag for line breaks.-->
-      <p class="error-message">Somewhere along the road, 
-        <br> we got lost and ended up <br> here.</p>
-      
-      <!--This is a placeholder for a link or button that allows the 
-      user to navigate back to a previous page or the homepage. -->
-      <div href="#" class="go-back "></div>
+        <!--@This div contains the actual content of the error message.-->
+        <div class="error-content">
+
+            <!--Let's check this out. Now let's style what we have so far.-->
+            <p class="error-message">Somewhere along the road,
+                <br> we got lost and ended up <br>here.
+            </p>
+
+
+            <!--Now it is time to add the go back button.-->
+            <!--This is a placeholder for a link or button that allows the 
+            user to navigate back to a previous page or the homepage. -->
+            <!--Now let's style it.-->
+            <div href="#" class="go-back"></div>
+
+        </div>
+
+
     </div>
-  </div>
+
+
+
 </body>
 </html>
