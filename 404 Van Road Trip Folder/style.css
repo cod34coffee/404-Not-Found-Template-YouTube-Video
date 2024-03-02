@@ -119,7 +119,7 @@ the class name "error-container." */
 .error-content{
     position: relative;
 
-    color: white; /* This property sets the text color of the element to white. 
+    color: white; /* This can be black too. This property sets the text color of the element to white. 
     This applies to all text content within the element and its descendants.*/
 
     z-index: 2;  /* This property sets the stack order of the element. 
